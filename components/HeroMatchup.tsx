@@ -1,113 +1,23 @@
 export default function HeroMatchup() {
   return (
-    <div
-      style={{
-        padding: "28px 20px 20px",
-        textAlign: "center",
-        position: "relative",
-        zIndex: 1,
-        flexShrink: 0,
-      }}
-    >
-      <p
-        style={{
-          color: "#84CEEF",
-          fontSize: "9px",
-          fontWeight: 700,
-          letterSpacing: "0.25em",
-          textTransform: "uppercase",
-          marginBottom: "18px",
-        }}
-      >
+    <div style={{ padding: '28px 20px 20px', textAlign: 'center', position: 'relative', zIndex: 10 }}>
+      <p style={{ fontSize: 9, fontWeight: 700, letterSpacing: '0.25em', textTransform: 'uppercase', color: '#84CEEF', marginBottom: 18, opacity: 0.9 }}>
         FIFA World Cup 2026 · Group Stage
       </p>
-
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: "16px",
-        }}
-      >
-        {/* South Africa */}
-        <div style={{ flex: 1, textAlign: "center" }}>
-          <div
-            style={{
-              fontSize: "40px",
-              filter: "drop-shadow(0 4px 14px rgba(0,0,0,0.45))",
-              animation: "float 3s ease-in-out infinite",
-              display: "inline-block",
-              lineHeight: 1,
-            }}
-          >
-            🇿🇦
-          </div>
-          <p
-            style={{
-              fontSize: "9px",
-              fontWeight: 700,
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-              marginTop: "6px",
-              color: "rgba(255,255,255,0.7)",
-            }}
-          >
-            South Africa
-          </p>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
+        <div style={{ flex: 1, textAlign: 'center' }}>
+          <span className="flag-left" style={{ fontSize: 40, lineHeight: 1, display: 'block', marginBottom: 6, filter: 'drop-shadow(0 4px 14px rgba(0,0,0,0.45))' }}>🇿🇦</span>
+          <span style={{ fontSize: 10, fontWeight: 800, letterSpacing: '0.13em', textTransform: 'uppercase', opacity: 0.85 }}>South Africa</span>
         </div>
-
-        {/* VS block */}
-        <div style={{ textAlign: "center", flexShrink: 0 }}>
-          <div
-            style={{
-              fontSize: "11px",
-              fontWeight: 900,
-              color: "#F18000",
-              letterSpacing: "0.2em",
-              animation: "vsPulse 2s ease-in-out infinite",
-            }}
-          >
-            VS
-          </div>
-          <div
-            style={{
-              fontSize: "9px",
-              color: "rgba(255,255,255,0.35)",
-              marginTop: "4px",
-            }}
-          >
-            14 Jun · 21:00 SAST
-          </div>
+        <div style={{ flexShrink: 0, padding: '0 10px', textAlign: 'center' }}>
+          <span className="vs-pulse" style={{ fontSize: 11, fontWeight: 900, color: '#F18000', letterSpacing: '0.2em', display: 'block', marginBottom: 3 }}>VS</span>
+          <span style={{ fontSize: 9, fontWeight: 600, color: 'rgba(255,255,255,0.48)', letterSpacing: '0.1em', whiteSpace: 'nowrap' }}>14 Jun · 21:00 SAST</span>
         </div>
-
-        {/* Mexico */}
-        <div style={{ flex: 1, textAlign: "center" }}>
-          <div
-            style={{
-              fontSize: "40px",
-              filter: "drop-shadow(0 4px 14px rgba(0,0,0,0.45))",
-              animation: "float 3s ease-in-out 1.5s infinite",
-              display: "inline-block",
-              lineHeight: 1,
-            }}
-          >
-            🇲🇽
-          </div>
-          <p
-            style={{
-              fontSize: "9px",
-              fontWeight: 700,
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-              marginTop: "6px",
-              color: "rgba(255,255,255,0.7)",
-            }}
-          >
-            Mexico
-          </p>
+        <div style={{ flex: 1, textAlign: 'center' }}>
+          <span className="flag-right" style={{ fontSize: 40, lineHeight: 1, display: 'block', marginBottom: 6, filter: 'drop-shadow(0 4px 14px rgba(0,0,0,0.45))' }}>🇲🇽</span>
+          <span style={{ fontSize: 10, fontWeight: 800, letterSpacing: '0.13em', textTransform: 'uppercase', opacity: 0.85 }}>Mexico</span>
         </div>
       </div>
     </div>
-  );
+  )
 }
